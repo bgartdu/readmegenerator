@@ -1,9 +1,8 @@
-# fun
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+# Read Me Generator
 
 ## Description
 
-dkjfsd
+Practiced writing a node readme generator.
 
 ## Table of Contents
 
@@ -29,26 +28,30 @@ npm i
 
 ## Usage
 
-fdfa
+Run the project with the command
+```
+node index.js
+```
+Answer the questions, and a readme will be generated automatically! 
 
 
 ## License
 
-This project is licensed under the MIT license
+This project is not licensed
 
 ## Contributing
 
-dfadfa
+Please send 1 mil to the developer!
 
 ## Tests
 
-to run tests, run the following command:
+there are currently no tests to run
 
 ```
-npm run test
+none
 ```
 
 ## Questions
 
-If you have any questions about the repository, open an issue or contact [bgartdu](undefined) directly at brandongart@gmil.com.
+If you have any questions about the repository, open an issue or contact [bgartdu](undefined) directly at brandongart@gmail.com.
 
