@@ -55,24 +55,73 @@ async function main () {
 
         {
             type: "input",
-            name: "tests",
-            message: "what the command to run tests?",
-        },
-
-        {
-            type: "input",
             name: "infoUse",
-            message: "what the command to run tests?",
+            message: "What does the user need to know to use this program?",
         },
 
         {
             type: "input",
             name: "infoContribute",
-            message: "what the command to run tests?",
+            message: "What does the user need to know to contribute to this project?",
         },
 
     ])
+let text = `# ${data.projectName}
 
+## Description
+
+${data.desc}
+
+## Table of Contents
+
+* [Installation](#installation)
+
+* [Usage](#usage)
+
+* [License](#license)
+
+* [Contributing](#contributing)
+
+* [test](#tests)
+
+* [Questions](#Questions)
+
+## Installation
+
+To install necessary dependencies run the following command:
+
+\`\`\`
+${data.dependencies}
+\`\`\`
+
+## Usage
+
+${data.infoUse}
+
+
+## License
+
+## Contributing
+
+${data.infoContribute}
+
+## Tests
+
+to run tests, run the following command:
+
+\`\`\`
+${data.tests}
+\`\`\`
+
+## Questions
+
+If you have any questions about the repository, open an issue or contact [${data.username}](undefined) directly at ${data.email}.
+
+`;
+
+    await fs.writeFile("README.md", text);
+
+    console.log("wrote file README.md!");
 
 
 }
